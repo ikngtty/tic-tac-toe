@@ -1,6 +1,6 @@
 const readline = require('readline')
 const resultType = require('../lib/consts/result-type')
-const CliPlayer = require('../lib/players/cli-player')
+const HumanPlayer = require('../lib/players/human-player')
 const GameMaster = require('../lib/game-master')
 
 const displayBoard = board => {
@@ -22,8 +22,8 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 })
-const oPlayer = new CliPlayer('o', rl)
-const xPlayer = new CliPlayer('x', rl)
+const oPlayer = new HumanPlayer('o', rl)
+const xPlayer = new HumanPlayer('x', rl)
 const gm = new GameMaster(oPlayer, xPlayer)
 
 gm.on('gameend', (result, state) => {
