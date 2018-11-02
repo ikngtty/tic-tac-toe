@@ -18,10 +18,21 @@ node examples/as-a-board.js
 ## Chapter 2
 
 ### Revision
-last.
+``09b9cf9 2018/11/01 04:57:56 Finish `as-a-game-master`.``
 
 ### How to run
 
 ```console
 node examples/as-a-game-master.js
+```
+
+## Chapter 3
+
+### Revision
+last.
+
+### How to run
+
+```console
+node examples/as-a-player.js
 ```
